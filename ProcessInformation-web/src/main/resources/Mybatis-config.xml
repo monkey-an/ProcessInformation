@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration  
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"  
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<settings>
+		<setting name="lazyLoadingEnabled" value="false" />
+		<setting name="defaultStatementTimeout" value="30" />
+	</settings>
+	<typeAliases>
+		<!-- <typeAlias type="com.chunbo.SysMonitor.entity.JobsInfoEntity" alias="JobsInfoEntity" />
+		<typeAlias type="com.chunbo.SysMonitor.entity.JobMonitorDetailEntity" alias="JobMonitorDetailEntity" />
+		<typeAlias type="com.chunbo.SysMonitor.entity.JobLogEntity" alias="JobLogEntity" />
+		<typeAlias type="com.chunbo.SysMonitor.entity.LinkmanDetailEntity" alias="LinkmanDetailEntity" /> -->
+	</typeAliases>
+	<typeHandlers>
+	</typeHandlers>
+
+	<mappers>
+		<!-- <mapper resource="com/chunbo/SysMonitor/mapper/MonitorMapper.xml" /> -->
+	</mappers>
+</configuration>
