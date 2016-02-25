@@ -13,9 +13,9 @@
 	http://www.springframework.org/schema/context 
 	http://www.springframework.org/schema/context/spring-context-3.2.xsd ">
     
-   <!--  <bean id="monitorDbSqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
-    	<property name="dataSource" ref="monitorDbDataSource"/>
+    <bean id="testDbSqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+    	<property name="dataSource" ref="testDbDataSource"/>
     	<property name="configLocation" value="classpath:Mybatis-config.xml" />
-    </bean> -->    
+    </bean>    
     
 </beans>

@@ -13,23 +13,22 @@
 	http://www.springframework.org/schema/context 
 	http://www.springframework.org/schema/context/spring-context-3.2.xsd ">
 	
-	<!-- <bean id="objectCache" class="com.chunbo.SysMonitor.base.cache.ObjectCache">
-		<property name="admin" ref="chunboCacheAdministrator" />
+	<bean id="objectCache" class="com.processinformation.base.cache.ObjectCache">
+		<property name="admin" ref="processinformationCacheAdministrator" />
 	</bean>
-	<bean id="chunboCacheAdministrator"
+	<bean id="processinformationCacheAdministrator"
 		class="com.opensymphony.oscache.general.GeneralCacheAdministrator">
 	</bean>
 	
-	<bean id="redisCache" class="com.chunbo.SysMonitor.base.cache.RedisCache">
+	<!-- <bean id="redisCache" class="com.chunbo.SysMonitor.base.cache.RedisCache">
 		<property name="host" value="172.16.10.235"/> 
 		<property name="port" value="6379"/> 
 		<property name="password" value=""/> 
 		<property name="timetOut" value="10000"/> 
 		<property name="dbIndex" value="1"/> 
-	</bean>
+	</bean>-->
 	
-	<context:component-scan base-package="com.chunbo.SysMonitor.serviceImpl,com.chunbo.SysMonitor.common,
-    com.chunbo.SysMonitor.daoImpl,com.chunbo.SysMonitor.cache"/>
+	<context:component-scan base-package="com.processinformation.serviceimpl,com.processinformation.daoimpl"/>
     
 	<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
 		<property name="locations">
@@ -39,5 +38,5 @@
 				<value>classpath:/configs/parameter.properties</value>
 			</list>
 		</property>
-	</bean> -->
+	</bean> 
 </beans>

@@ -13,12 +13,11 @@
 	<tx:annotation-driven/>  
     <bean id="transactionFactory" class="org.apache.ibatis.transaction.jdbc.JdbcTransactionFactory"/>
     
-	<!-- <bean id="dinsMonitor" class="com.chunbo.SysMonitor.base.dbinstance.DBInstance" scope="prototype">
-    	<property name="sqlSessionFactory" ref="monitorDbSqlSessionFactory"></property>
+	<bean id="dinsTest" class="com.processinformation.base.dbinstance.DBInstance" scope="prototype">
+    	<property name="sqlSessionFactory" ref="testDbSqlSessionFactory"></property>
 		<property name="transactionFactory" ref="transactionFactory"></property>
     </bean>
     
-    <bean id="monitorDao" class="com.chunbo.SysMonitor.daoImpl.MonitorDaoImpl"></bean> -->
     
 </beans>
 	

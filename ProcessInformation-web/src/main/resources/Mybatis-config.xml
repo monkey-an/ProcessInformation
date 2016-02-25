@@ -8,15 +8,12 @@
 		<setting name="defaultStatementTimeout" value="30" />
 	</settings>
 	<typeAliases>
-		<!-- <typeAlias type="com.chunbo.SysMonitor.entity.JobsInfoEntity" alias="JobsInfoEntity" />
-		<typeAlias type="com.chunbo.SysMonitor.entity.JobMonitorDetailEntity" alias="JobMonitorDetailEntity" />
-		<typeAlias type="com.chunbo.SysMonitor.entity.JobLogEntity" alias="JobLogEntity" />
-		<typeAlias type="com.chunbo.SysMonitor.entity.LinkmanDetailEntity" alias="LinkmanDetailEntity" /> -->
+		<typeAlias type="com.processinformation.entity.test.TestEntity" alias="TestEntity" />
 	</typeAliases>
 	<typeHandlers>
 	</typeHandlers>
 
 	<mappers>
-		<!-- <mapper resource="com/chunbo/SysMonitor/mapper/MonitorMapper.xml" /> -->
+		<mapper resource="com/processinformation/mapper/testdbmapper.xml" />
 	</mappers>
 </configuration>
